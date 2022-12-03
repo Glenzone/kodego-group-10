@@ -1,0 +1,67 @@
+.bg-proment {
+    background-color: #F8F4E3;
+}
+
+#navbar {
+    background-color: #4070f4;
+}
+
+@font-face {
+    font-family: 'proment-regular';
+    src: url('../fonts/kollektif-webfont.woff2') format('woff2'),
+         url('../fonts/kollektif-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'proment-bold';
+    src: url('../fonts/kollektif-bold-webfont.woff2') format('woff2'),
+         url('../fonts/kollektif-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'proment-bold-italic';
+    src: url('../fonts/kollektif-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/kollektif-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'proment-italic';
+    src: url('../fonts/kollektif-italic-webfont.woff2') format('woff2'),
+         url('../fonts/kollektif-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'test';
+    src: url('../fonts2/Kollektif.ttf');
+}
+
+.proment-regular {
+    font-family: 'test';
+}
+
+.proment-bold {
+    font-family: 'proment-bold';
+}
+
+.proment-bold-italic {
+    font-family: 'proment-bold-italic';
+}
+
+.proment-italic {
+    font-family: 'proment-italic';
+}
