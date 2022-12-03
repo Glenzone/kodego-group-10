@@ -4,11 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/favico.ico">
+    <link rel="stylesheet" href="./assets/bootstrap5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="./assets/style01.css">
     <title>Login</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="./assets/proment.png" alt="proment logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
     <div class="container">
         <div class="forms">
             <div class="form login">
@@ -34,7 +47,9 @@
                     </div>
 
                     <div class="input-field button">
-                        <input type="button" value="Login">
+                        <a href="./home.html">
+                            <input type="button" value="Login">
+                        </a>
                     </div>
                 </form>
 
@@ -88,6 +103,7 @@
             </div>
         </div>
     </div>
+    <script src="./assets/bootstrap5/js/bootstrap.min.js"></script>
     <script src="./assets/script01.js"></script>
 </body>
 </html>
