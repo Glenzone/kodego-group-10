@@ -51,7 +51,7 @@
 }
 
 .proment-regular {
-    font-family: 'test';
+    font-family: 'proment-regular';
 }
 
 .proment-bold {
@@ -64,4 +64,29 @@
 
 .proment-italic {
     font-family: 'proment-italic';
+}
+
+#nav-left {
+    position: absolute;
+}
+
+#nav-right {
+    position: absolute;
+    z-index: 99;
+    left: 100;
+    right: 0;
+}
+
+.blue-1, .blue-1:hover {
+    background-color: #003049;
+    color: #ffff;
+}
+
+.blue-2 {
+    color: #4070f4;
+    background-color: #4070f4;
+}
+
+.blue-3 {
+    color:  #b2c5fb;
 }
