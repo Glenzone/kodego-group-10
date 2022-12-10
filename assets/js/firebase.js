@@ -6,7 +6,7 @@ class Firebase {
         this.responseData = "";
     }
 
-    retreiveData() {
+    retrieveData() {
         for (let item in this.dataset) {
             fetch(this.url + item + `.json`)
             .then((response) => {
@@ -25,4 +25,4 @@ class Firebase {
 }
 
 let firebase = new Firebase;
-firebase.retreiveData;
+firebase.retrieveData;
