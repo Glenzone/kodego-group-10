@@ -12,7 +12,7 @@ loadData = new Promise((resolve,reject) => {
         document.getElementById("navbar").setAttribute("style","background-color: #b2c5fb");
         document.getElementById("navbar-container").removeAttribute("style");
         document.getElementById("projects").setAttribute("style", "display: block");
-        document.getElementById("newProject").setAttribute("style", "display: block");
+        // document.getElementById("newProject").setAttribute("style", "display: block");
         document.getElementById("projectName").setAttribute("style", "display: block");
         resolve();
     },3000)
@@ -28,8 +28,6 @@ loadData.then(() => {
 
     let i = 0;
     let max = projectDetails.length;
-    console.log(i);
-    console.log(max);
 
     while (i < max) {
         str += `
