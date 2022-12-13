@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/bootstrap5/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/orgchart02style01css">
-    <title>Organizational Chart</title>
-</head>
-<body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/brand.css">
     <style>
         body {
             background-color: #FFC000;
+        }
+        #navbar {
+            background-color: #b2c5fb;
         }
         .genealogy-scroll::-webkit-scrollbar {
             width: 5px;
@@ -163,6 +166,45 @@
             box-sizing: border-box;
         }
     </style>
+    <title>Organizational Chart</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand" id="navbar">
+        <div class="container-fluid">
+            <div id="nav-left">
+                <a class="navbar-brand" href="./home.html">
+                    <img src="./assets/proment.png" alt="proment-logo" width="150">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item me-3">
+                        <a class="nav-link active proment-bold" aria-current="page" href="./home.html">
+                            <i class="bi bi-house-fill"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link proment-bold" href="./orgchart02.html">
+                            <i class="bi bi-people-fill"></i>
+                            People
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link proment-bold" href="#">
+                            <i class="bi bi-bell-fill"></i>
+                            Notifications
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="nav-right">
+                <a href="#" class="nav-item me-3 ps-1" id="myAccount">
+                    <img src="./assets/01-rtvillegas.jpg" alt="logged-in user" class="border  border-dark border-1 rounded-circle" id="account-image " height="45">
+                </a>
+            </div>
+        </div>
+    </nav>
     <div class="body genealogy-body genealogy-scroll">
         <div class="genealogy-tree">
             <ul>
@@ -338,6 +380,7 @@
             </ul>
         </div>
     </div>
+<script src="./assets/bootstrap5/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
 $(function () {
@@ -351,7 +394,6 @@ $(function () {
         e.stopPropagation();
     });
 });
-</script>
 </script>
 </body>
 </html>
