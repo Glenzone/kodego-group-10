@@ -50,7 +50,7 @@ body{
     transition: opacity 0.2s ease;
 }
 .container.active .forms{
-    height: 600px;
+    height: 675px;
 }
 .container .form .title{
     position: relative;
@@ -88,6 +88,7 @@ body{
 .input-field input:is(:focus, :valid){
     border-bottom-color: #4070f4;
 }
+
 .input-field i{
     position: absolute;
     top: 50%;

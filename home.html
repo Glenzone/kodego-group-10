@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/favico.ico">
+    <link rel="stylesheet" href="./assets/bootstrap5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/brand.css">
+    <title>Home - proment</title>
+
+    <style>
+        #navbar {
+            background-color: #F8F4E3;
+        }
+        #newProject:active {
+            background-color: #003049;
+            color: #ffff;
+        }
+        #proment-logo-sm {
+            display: none;
+        }
+        .icons {
+            display: none
+        }
+        @media (max-width: 700px) {
+            #proment-logo {
+                display: none;
+            }
+            #proment-logo-sm {
+                display: block;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .descriptions {
+                display: none;
+            }
+            .icons {
+                display: block;
+            }
+        }
+
+        a.col-sm-4:link{
+            text-decoration: none;
+            color: #212529;
+        }
+    </style>
+</head>
+<body class="bg-proment">
+    <nav class="navbar navbar-expand" id="navbar">
+        <div class="container-fluid" style="display: none" id="navbar-container">
+            <div id="nav-left">
+                <a class="navbar-brand" id="proment-logo">
+                    <img src="./assets/proment.png" alt="proment-logo" width="150">
+                </a>
+            </div>
+            <div id="nav-left">
+                <a class="navbar-brand" id="proment-logo-sm">
+                    <img src="./assets/favico.ico" alt="proment-logo" height="42">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav description">
+                    <li class="nav-item me-3 descriptions">
+                        <a class="nav-link proment-bold active" aria-current="page">
+                            <i class="bi bi-house-fill"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item me-3 descriptions">
+                        <a class="nav-link proment-bold" href="./orgchart02.html">
+                            <i class="bi bi-people-fill"></i>
+                            People
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item descriptions">
+                        <a class="nav-link proment-bold" href="#">
+                            <i class="bi bi-bell-fill"></i>
+                            Notifications
+                        </a>
+                    </li> -->
+                    <li class="nav-item me-3 icons">
+                        <a class="nav-link active proment-bold active" aria-current="page" href="">
+                            <i class="bi bi-house-fill"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item me-3 icons">
+                        <a class="nav-link proment-bold" href="./orgchart02.html">
+                            <i class="bi bi-people-fill"></i>
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item icons">
+                        <a class="nav-link proment-bold" href="#">
+                            <i class="bi bi-bell-fill"></i>
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+            <div id="nav-right">
+                <a href="#" class="nav-item me-3 ps-1" id="myAccount" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
+                    <img src="" class="border  border-dark border-1 rounded-circle" id="account-image" height="45">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 d-flex justify-content-center">
+        <h1 class="proment-bold" id="projectName" style="display: none"></h1>
+    </div>
+    <div class="container mt-3 d-flex justify-content-center" id="createProject">
+        <button class="btn blue-1" id="newProject" style="display: none">Make a new project</button>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="container" id="projects" style="display: none">
+        <div class="row row-cols-md-3 gy-4 id" id="projectsContainer">
+        </div>
+    </div>
+
+    <div class="position-absolute top-50 start-50 translate-middle" id="spinner">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+    <!-- <div class="container">
+        <a class="position-absolute bottom-0 end-0 me-3 mb-3" href="" id="help">
+            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+              </svg>
+        </a>
+    </div> -->
+    <script src="./assets/bootstrap5/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jsonpath.js"></script>
+    <script src="./assets/js/firebase.js"></script>
+    <script src="./assets/js/home.js"></script>
+</body>
+</html>

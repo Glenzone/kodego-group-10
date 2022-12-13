@@ -1,0 +1,135 @@
+.bg-proment {
+    background-color: #F8F4E3;
+}
+
+#navbar {
+    background-color: #4070f4;
+}
+
+@font-face {
+    font-family: 'proment-regular';
+    src: url('../fonts/kollektif-webfont.woff2') format('woff2'),
+         url('../fonts/kollektif-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'proment-bold';
+    src: url('../fonts/kollektif-bold-webfont.woff2') format('woff2'),
+         url('../fonts/kollektif-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'proment-bold-italic';
+    src: url('../fonts/kollektif-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/kollektif-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'proment-italic';
+    src: url('../fonts/kollektif-italic-webfont.woff2') format('woff2'),
+         url('../fonts/kollektif-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'test';
+    src: url('../fonts2/Kollektif.ttf');
+}
+
+.proment-regular {
+    font-family: 'proment-regular';
+}
+
+.proment-bold {
+    font-family: 'proment-bold';
+}
+
+.proment-bold-italic {
+    font-family: 'proment-bold-italic';
+}
+
+.proment-italic {
+    font-family: 'proment-italic';
+}
+
+#nav-left {
+    position: absolute;
+}
+
+.nav-left {
+    position: absolute;
+    left: 0;
+    right: 100;
+}
+
+#nav-right {
+    position: absolute;
+    z-index: 99;
+    left: 100;
+    right: 0;
+}
+
+.nav-right {
+    position: absolute;
+    z-index: 99;
+    left: 100;
+    right: 0;
+}
+
+#help {
+    color: #D06311;
+}
+
+.blue-1, .blue-1:hover, .blue-1:active {
+    background-color: #003049;
+    color: #ffff;
+}
+
+#newTool:active, #newTodoList:active {
+    background-color: #003049;
+    color: #ffff;
+    border-color: #003049;
+}
+
+.blue-2 {
+    color: #4070f4;
+    background-color: #4070f4;
+}
+
+.blue-3, .blue-3:hover, .blue-3:focus, .blue-3:active {
+    background-color: #cedbff;
+    border-color: #cedbff;
+}
+
+.orange-1 {
+    border: 1px;
+    border-color: #D06311;
+}
+
+.card {
+    height: 10rem;
+}
+
+.link:active, .link:hover, .link:focus {
+    background-color: #F8F4E3;
+}
+
+#newTodo, #newTodo:hover, #newTodo:focus, #newTodo:active {
+    background-color: #cedbff;
+    border-color: #cedbff;
+    border-radius: 1rem;
+}
