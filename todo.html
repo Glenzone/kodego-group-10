@@ -70,12 +70,12 @@
                             People
                         </a>
                     </li>
-                    <li class="nav-item descriptions">
+                    <!-- <li class="nav-item descriptions">
                         <a class="nav-link proment-bold" href="#">
                             <i class="bi bi-bell-fill"></i>
                             Notifications
                         </a>
-                    </li>
+                    </li> -->
                     <li class="nav-item me-3 icons">
                         <a class="nav-link active proment-bold" aria-current="page" href="">
                             <i class="bi bi-house-fill"></i>
@@ -86,11 +86,11 @@
                             <i class="bi bi-people-fill"></i>
                         </a>
                     </li>
-                    <li class="nav-item icons">
+                    <!-- <li class="nav-item icons">
                         <a class="nav-link proment-bold" href="#">
                             <i class="bi bi-bell-fill"></i>
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <div id="nav-right">
@@ -107,53 +107,26 @@
             </a>  
         </div>
         <div class="container mt-2 pb-3 pt-3 text-center border border-bottom-0 position-relative">
-            <button class="btn btn-sm text-center nav-left ms-3 blue-1" id="newTodoList">Add a new list</button>
+            <!-- <button class="btn btn-sm text-center nav-left ms-3 blue-1" id="newTodoList">Add a new list</button> -->
             <span class="proment-bold text-center h3 mt-2" id="toolName">Tasks</span>
-            <span class="proment-regular text-muted" id="progress">2/8</span>
+            <span class="proment-regular text-muted" id="progress"></span>
         </div>
         <div class="container ps-3 proment-regular border" id="toDosContainer">
             <h4 class="ms-4 mt-3" id="toDoTitle">Month 1 To Dos</h4>
             <ul class="list-group" id="unfinishedToDos">
-                <li class="list-group-item border-0 bg-proment pt-0 pb-0">
-                    <a href="#" class="list-group-item list-group-item-action border-0 bg-proment pt-0 pb-0 link">
-                        <input type="checkbox" id="" class="form-check-input me-1">
-                        <label class="form-check-label h5">First Todo</label>
-                        <small class="text-muted" id="dueDate">And some muted small print.</small>
-                        <small class="text-muted" id="assignedTo">And some muted small print.</small>
-                    </a>
-                </li>
-                <li class="list-group-item border-0 bg-proment pt-0 pb-0">
-                    <a href="#" class="list-group-item list-group-item-action border-0 bg-proment pt-0 pb-0 link">
-                        <input type="checkbox" id="" class="form-check-input me-1">
-                        <label class="form-check-label h5">Second Todo</label>
-                        <small class="text-muted" id="dueDate">And some muted small print.</small>
-                        <small class="text-muted" id="assignedTo">And some muted small print.</small>
-                    </a>
-                </li>
             </ul>
+            <div class="container" style="display: none" id="toDoCreator">
+                <div class="mb-3 mt-1 px-3 pt-3">
+                    <label for="toDoName" class="form-label">Task Name</label>
+                    <input type="text" class="form-control" id="toDoName" required>
+                </div>
+                <button class="btn btn-sm text-center ms-3 blue-3 mb-2" id="addTodo" onclick="toDo.addTask()">Add</button>
+                <button class="btn btn-sm text-center ms-3 blue-3 mb-2" id="canCel" onclick="hideToDoCreator()">Cancel</button>
+            </div>
+            <button class="btn btn-sm text-center ms-4 blue-3 mb-2" id="newTodo" onclick="unHideToDoCreator()">Add a to do</button>
 
-            <button class="btn btn-sm text-center ms-4 blue-3 mb-2" id="newTodo">Add a to do</button>
-
-            <ul class="list-group" id="doneToDos">
-                <li class="list-group-item border-0 bg-proment pt-0 pb-0">
-                    <a href="#" class="list-group-item list-group-item-action border-0 bg-proment pt-0 pb-0 link">
-                        <input type="checkbox" id="" class="form-check-input me-1" checked>
-                        <label class="form-check-label h5">First Todo</label>
-                        <small class="text-muted" id="dueDate">And some muted small print.</small>
-                        <small class="text-muted" id="assignedTo">And some muted small print.</small>
-                    </a>
-                </li>
-                <li class="list-group-item border-0 bg-proment pt-0 pb-0">
-                    <a href="#" class="list-group-item list-group-item-action border-0 bg-proment pt-0 pb-0 link">
-                        <input type="checkbox" id="" class="form-check-input me-1" checked>
-                        <label class="form-check-label h5">Second Todo</label>
-                        <small class="text-muted" id="dueDate">And some muted small print.</small>
-                        <small class="text-muted" id="assignedTo">And some muted small print.</small>
-                    </a>
-                </li>
+            <ul class="list-group mt-3" id="doneToDos">
             </ul>
-            <br>
-            <h4 class="ms-4 mt-3" id="toDoTitle">Month 2 To Dos</h4>
         </div>
 
     </div>
@@ -167,5 +140,6 @@
         </a>
     </div> -->
     <script src="./assets/bootstrap5/js/bootstrap.min.js"></script>
+    <script src="./assets/js/todo.js"></script>
 </body>
 </html>
